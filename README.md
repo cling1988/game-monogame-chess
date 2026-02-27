@@ -70,6 +70,16 @@ dotnet run --project ChessGame/ChessGame.csproj
 
 Or open the solution in Visual Studio / Rider and press **F5**.
 
+### Troubleshooting (Font build error)
+
+If you see an error like:
+
+`Processor 'FontDescriptionProcessor' had unexpected failure ... Could not find "<font name>" font file`
+
+the font configured in `ChessGame/Content/Font.spritefont` or `ChessGame/Content/SmallFont.spritefont` is not installed on your OS.
+
+Update each `<FontName>` value to an installed system font (for example: `Arial` on Windows, or `Liberation Sans` on many Linux distributions), then build again.
+
 ---
 
 ## How to Play
